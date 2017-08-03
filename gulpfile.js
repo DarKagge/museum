@@ -67,7 +67,7 @@ gulp.task('scripts', function() {
         './app/libs/fancyBox/jquery.fancybox.js',
         './app/libs/plugins-scroll/plugins-scroll.js',
         './app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
-        './app/libs/lightslider/dist/js/lightslider.min.js',
+        './app/libs/owl.carousel/dist/owl.carousel.min.js',
         './app/libs/tether/dist/js/tether.min.js',
         './app/libs/jquery.countdown/dist/jquery.countdown.min.js'
     ])
