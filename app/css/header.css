@@ -1,21 +1,220 @@
+@font-face {
+  font-family: "TrajanPro3-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/TrajanPro3-Bold/TrajanPro3-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/TrajanPro3-Bold/TrajanPro3-Bold.woff") format("woff"), url("../fonts/TrajanPro3-Bold/TrajanPro3-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "verdana";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/verdana/verdana.eot?#iefix") format("embedded-opentype"), url("../fonts/verdana/verdana.woff") format("woff"), url("../fonts/verdana/verdana.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "verdanab";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/verdanab/verdanab.eot?#iefix") format("embedded-opentype"), url("../fonts/verdanab/verdanab.woff") format("woff"), url("../fonts/verdanab/verdanab.ttf") format("truetype"); }
+
 body {
-  font-size: 16px;
-  min-width: 275px;
-  position: relative;
-  line-height: 1.6;
-  font-family: "RobotoRegular", sans-serif;
-  overflow-x: hidden;
-  background-color: #fff; }
+  font-family: verdana; }
 
-body a {
-  text-decoration: none;
-  -webkit-transition: color 0.4s ease, background-color 0.4s ease, border-color 0.4s ease;
-  transition: color 0.4s ease, background-color 0.4s ease, border-color 0.4s ease; }
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-duration: .4s;
+  animation-duration: .4s; }
 
-.hidden {
-  display: none; }
+@-webkit-keyframes shake {
+  from {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); }
+  20%, 60% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px); }
+  40%, 80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px); }
+  to {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); } }
 
-.wrapper {
-  width: 960px;
-  margin: 0 auto;
-  overflow: hidden; }
+@keyframes shake {
+  from {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); }
+  20%, 60% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px); }
+  40%, 80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px); }
+  to {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); } }
+
+.logo {
+  padding: 14px 0;
+  float: left; }
+  @media (max-width: 991px) {
+    .logo {
+      text-align: center;
+      float: none; } }
+
+.head-text {
+  text-align: center;
+  padding-top: 29px;
+  float: inherit;
+  padding-left: 90px; }
+  .head-text h2 {
+    font-family: TrajanPro3-Bold;
+    font-size: 15px;
+    color: #151515; }
+  @media (max-width: 991px) {
+    .head-text {
+      padding-left: 0;
+      float: none; } }
+
+.right-num-soc {
+  padding-top: 20px;
+  text-align: right;
+  float: right; }
+  @media (max-width: 991px) {
+    .right-num-soc {
+      text-align: center;
+      float: none; } }
+  .right-num-soc p {
+    font-family: verdana;
+    font-size: 18px;
+    color: #151515; }
+  .right-num-soc ul {
+    display: inline-block; }
+  .right-num-soc li {
+    float: left;
+    margin: 9px 2px; }
+  .right-num-soc a {
+    display: block; }
+
+.grey-head {
+  background-color: #acb0ba;
+  min-height: 84px; }
+
+body .departments-menu {
+  float: left; }
+  body .departments-menu p {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 18px;
+    color: #151515;
+    padding-top: 32px; }
+  body .departments-menu ul {
+    vertical-align: top;
+    display: inline-block;
+    margin: 2px 0;
+    padding-left: 40px; }
+  body .departments-menu li {
+    float: left; }
+    body .departments-menu li:first-child a {
+      margin-left: 0; }
+    body .departments-menu li:last-child {
+      margin-right: 0; }
+    body .departments-menu li:nth-child(3) a:hover {
+      background-image: url("../img/3-h.png") !important; }
+    body .departments-menu li:nth-child(4) a:hover {
+      background-image: url("../img/4-h.png") !important; }
+    body .departments-menu li:nth-child(5) a:hover {
+      background-image: url("../img/5-h.png") !important; }
+  body .departments-menu a {
+    width: 65px;
+    height: 65px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    margin: 9px 10.5px 10px 10.5px; }
+    body .departments-menu a:hover {
+      width: 78px;
+      height: 79px;
+      margin: 2px 1px 2px 1px; }
+  @media (max-width: 991px) {
+    body .departments-menu {
+      float: none;
+      text-align: center; } }
+  @media (max-width: 670px) {
+    body .departments-menu ul {
+      padding-left: 0; } }
+  @media (max-width: 445px) {
+    body .departments-menu ul {
+      min-height: 88px; }
+    body .departments-menu li {
+      float: none;
+      display: inline-block; }
+    body .departments-menu a {
+      margin: 0 5px; }
+      body .departments-menu a:hover {
+        margin: 0 5px; } }
+
+.searh {
+  float: right;
+  max-width: 247px;
+  height: 33px;
+  width: 100%;
+  background-color: #fff;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  border: 1px solid #9e9b9b;
+  margin-top: 25px; }
+  .searh input {
+    border: none;
+    font-size: 14px;
+    height: 29px;
+    padding-left: 12px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px; }
+    .searh input::-webkit-input-placeholder {
+      color: #a3a3a3;
+      font-size: 14px; }
+    .searh input::-moz-placeholder {
+      color: #a3a3a3;
+      font-size: 14px; }
+    .searh input:-moz-placeholder {
+      color: #a3a3a3;
+      font-size: 14px; }
+    .searh input:-ms-input-placeholder {
+      color: #a3a3a3;
+      font-size: 14px; }
+  .searh button {
+    background-image: url("../img/search.png");
+    background-position: center;
+    width: 20px;
+    height: 22px;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    float: right;
+    margin: 6px 9px; }
+  @media (max-width: 991px) {
+    .searh {
+      float: none;
+      text-align: center;
+      margin: 20px auto; } }
+
+.menu-top li {
+  float: left; }
+  .menu-top li:first-child a {
+    margin-left: 0; }
+  .menu-top li:last-child a {
+    margin-right: 0; }
+
+.menu-top a {
+  display: block;
+  color: #151515;
+  font-size: 14px;
+  font-family: verdanab;
+  margin: 21px 27px; }
+  .menu-top a:hover {
+    text-decoration: none;
+    color: #cf2c38; }

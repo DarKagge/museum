@@ -1,0 +1,7 @@
+@import "bourbon";
+
+
+@include font-face("TrajanPro3-Bold", "../fonts/TrajanPro3-Bold/TrajanPro3-Bold", $file-formats: eot woff ttf);
+@include font-face("verdana", "../fonts/verdana/verdana", $file-formats: eot woff ttf);
+@include font-face("verdanab", "../fonts/verdanab/verdanab", $file-formats: eot woff ttf);
+//@include font-face("Fregat", "../fonts/FregatBoldItalic/Fregat_bold_italic", 700 , italic , $file-formats: eot woff ttf svg);
