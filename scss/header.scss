@@ -232,6 +232,7 @@ body .departments-menu{
 }
 .head-menu{
   text-align: center;
+
 }
 
 
@@ -266,13 +267,31 @@ body .departments-menu{
       text-align: center;
       position: absolute;
       left: -500%
+
     }
   }
 }
-
-body.is-active{
+.menu-top.is-active{
   left: 0;
   width: 100%;
-  height: 100%;
-  
+  top: 0;
+  z-index: 6;
+  background-color: #acb0ba;
+  position: fixed;
+  li{
+    display: block;
+    float: none;
+  }
+  a{
+    margin: 0;
+    padding: 20px 0;
+  }
+}
+
+
+.hamburger.is-active{
+  z-index: 6;
+  position: fixed;
+  right: 20%;
+  top: 15px;
 }
