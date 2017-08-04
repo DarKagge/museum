@@ -14,6 +14,15 @@ $(function() {
 
     $('.popup').magnificPopup();
 
+
+    $(".owl-carousel").owlCarousel({
+        loop:false,
+        margin:0,
+        nav:true,
+        items: 1,
+        dots: true
+    })
+
 });
 
 //Форма отправки 2.0
