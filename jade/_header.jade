@@ -51,12 +51,12 @@ header
                             form( method="post")
                                 input(type='search' placeholder='Поиск по сайту')
                                 button(type='submit' value="Поиск")
-    .menu-top
+    .head-menu
         .inner
             .container-fluid
                 .row
                     .col-md-12
-                        ul
+                        ul.menu-top
                             li
                                 a(href='#') О музее
                             li
@@ -73,5 +73,8 @@ header
                                 a(href='#') Наука
                             li
                                 a(href='#') Контакты
+                        .hamburger.hamburger--elastic.hidden-md.visible-xs.visible-sm(type="button")
+                            span.hamburger-box
+                                span.hamburger-inner
 
 

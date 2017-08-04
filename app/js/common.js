@@ -104,3 +104,15 @@ $(function() {
         return false;
     });
 });
+
+
+$('.hamburger').on('click',function(){
+    $(this).toggleClass('is-active');
+    $(".menu-top").toggleClass('is-active');
+});
+$(document).on("click",function(event){
+    if( $(event.target).closest(".menu-top,.hamburger").length )return;
+    $('.menu-top').removeClass('is-active');
+    $(".menu-top").removeClass('is-active');
+    event.stopPropagation();
+});
