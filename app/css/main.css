@@ -414,6 +414,9 @@ footer {
     padding-top: 7px; }
     .partners li:first-child {
       margin-right: 21px; }
+  @media (max-width: 991px) {
+    .partners {
+      float: right; } }
 
 .faq-text {
   display: block;
@@ -423,6 +426,11 @@ footer {
   .faq-text p {
     font-size: 14px;
     color: #74778a; }
+  @media (max-width: 991px) {
+    .faq-text {
+      padding-top: 25px;
+      width: 100%;
+      text-align: center; } }
 
 .email {
   text-align: right;
@@ -430,6 +438,9 @@ footer {
   padding-bottom: 20px; }
   .email p {
     color: #fff; }
+  @media (max-width: 991px) {
+    .email {
+      text-align: center; } }
 
 .creat {
   text-align: right; }
@@ -438,6 +449,9 @@ footer {
   .creat p {
     color: #fff;
     padding-right: 4px; }
+  @media (max-width: 991px) {
+    .creat {
+      text-align: center; } }
 
 .footer-for-scary {
   background-color: #010106; }
