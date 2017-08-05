@@ -324,5 +324,112 @@ $hamburger-layer-color: #000;
     margin-bottom: 27px;
   }
 }
+
+footer{
+  padding-top: 24px;
+  background-color: #050717;
+  .right-num-soc{
+    padding-top: 0;
+    float: none;
+    p{
+      color: #fff;
+    }
+  }
+}
+
+
+.menu-footer{
+  float: left;
+  a{
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+    font-family: verdanab;
+    &:hover{
+      color: #cf2c38;
+    }
+  }
+}
+.menu-footer-two{
+  padding-left: 60px;
+}
+
+.partners{
+  float: left;
+  padding-left: 73px;
+  p{
+    color: #ffffff;
+    font-size:14px;
+    line-height: 30px;
+  }
+  li{
+    float: left;
+    padding-top: 7px;
+    &:first-child{
+      margin-right: 21px;
+    }
+  }
+}
+
+.faq-text{
+  display: block;
+  float: inherit;
+  padding-top: 18px;
+  padding-bottom: 12px;
+  p{
+    font-size: 14px;
+    color: #74778a;
+  }
+}
+
+.email{
+  text-align: right;
+  font-size: 14px;
+  padding-bottom: 20px;
+  p{
+    color: #fff;
+  }
+}
+.creat{
+  text-align: right;
+  *{
+    display: inline-block;
+  }
+  p{
+    color: #fff;
+    padding-right: 4px;
+  }
+}
+
+.footer-for-scary{
+  background-color: #010106;
+}
+.left-sc{
+  float: left;
+  padding: 15px 0;
+  p{
+    font-size: 12px;
+    color: #74778a;
+  }
+}
+.email-c{
+  padding: 17px 0 18px 58px;
+  float: left;
+}
+.low-vers{
+  float: right;
+  padding: 11px 0;
+  *{
+    float: left;
+  }
+  img{
+    padding-top: 8px;
+    padding-right: 11px;
+  }
+  p{
+    font-size: 16px;
+    color: #fff;
+  }
+}
 //ALWAYS END
 @import "sketches.scss";

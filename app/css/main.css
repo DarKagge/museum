@@ -380,6 +380,91 @@
   display: block;
   margin-bottom: 27px; }
 
+footer {
+  padding-top: 24px;
+  background-color: #050717; }
+  footer .right-num-soc {
+    padding-top: 0;
+    float: none; }
+    footer .right-num-soc p {
+      color: #fff; }
+
+.menu-footer {
+  float: left; }
+  .menu-footer a {
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+    font-family: verdanab; }
+    .menu-footer a:hover {
+      color: #cf2c38; }
+
+.menu-footer-two {
+  padding-left: 60px; }
+
+.partners {
+  float: left;
+  padding-left: 73px; }
+  .partners p {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 30px; }
+  .partners li {
+    float: left;
+    padding-top: 7px; }
+    .partners li:first-child {
+      margin-right: 21px; }
+
+.faq-text {
+  display: block;
+  float: inherit;
+  padding-top: 18px;
+  padding-bottom: 12px; }
+  .faq-text p {
+    font-size: 14px;
+    color: #74778a; }
+
+.email {
+  text-align: right;
+  font-size: 14px;
+  padding-bottom: 20px; }
+  .email p {
+    color: #fff; }
+
+.creat {
+  text-align: right; }
+  .creat * {
+    display: inline-block; }
+  .creat p {
+    color: #fff;
+    padding-right: 4px; }
+
+.footer-for-scary {
+  background-color: #010106; }
+
+.left-sc {
+  float: left;
+  padding: 15px 0; }
+  .left-sc p {
+    font-size: 12px;
+    color: #74778a; }
+
+.email-c {
+  padding: 17px 0 18px 58px;
+  float: left; }
+
+.low-vers {
+  float: right;
+  padding: 11px 0; }
+  .low-vers * {
+    float: left; }
+  .low-vers img {
+    padding-top: 8px;
+    padding-right: 11px; }
+  .low-vers p {
+    font-size: 16px;
+    color: #fff; }
+
 .allert, .allert_tell {
   position: absolute;
   z-index: 20;
