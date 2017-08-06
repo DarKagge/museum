@@ -53,7 +53,9 @@ $hamburger-layer-color: #000;
   padding-top: 40px;
   border-top: 2px solid #eeeeee;
 }
-
+.main-content-in{
+  padding-top: 30px;
+}
 .calendar{
   margin-top: 32px;
   img{
@@ -178,7 +180,9 @@ $hamburger-layer-color: #000;
 .content-for{
   padding-top: 27px;
 }
-
+.content-for{
+  padding-top: 12px;
+}
 
 .poster{
   width: 100%;
@@ -191,7 +195,68 @@ $hamburger-layer-color: #000;
     }
   }
 }
+.poster-in{
+  max-width: inherit;
+  float: none;
+  .items-cont{
+    li{
+      display: flex;
+    }
+  }
+  .img-items{
+    height: 175px;
+    width: 164px;
+    img{
+      min-height: 175px;
+    }
+  }
+  .p-text{
+    h2{
+      font-size: 36px;
 
+    }
+  }
+  .text-items{
+    width: 74%;
+    p{
+      color: #151515;
+      font-family: verdanab;
+    }
+
+  }
+  span{
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    color: #151515;
+    line-height: 18px;
+    padding-top: 7px;
+
+  }
+  tt{
+    display: block;
+    font-size: 14px;
+    line-height: 15px;
+    color: #9d9d9d;
+    padding-top: 15px;
+  }
+  @if $adaptive == true {
+    @media (max-width: 670px){
+      tt{
+        padding-bottom: 15px;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 450px){
+      .items-cont{
+        li{
+          display: block;
+        }
+      }
+    }
+  }
+}
 .p-text{
   h2{
     font-size:24px;
@@ -225,6 +290,19 @@ $hamburger-layer-color: #000;
   img{
     width: 100%;
   }
+  @if $adaptive == true {
+    @media (max-width: 450px){
+      float: none;
+      width: 320px !important;
+      text-align: center;
+      display: block;
+      margin: 0px auto;
+      padding: 14px;
+      img{
+        width: auto;
+      }
+    }
+  }
 }
 
 .text-items{
@@ -257,6 +335,15 @@ $hamburger-layer-color: #000;
   @if $adaptive == true {
     @media (max-width: 853px){
       width: 70%;
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 450px){
+      float: none;
+      width: 100% !important;
+      display: block;
+      text-align: center;
+      padding-bottom: 14px;
     }
   }
 }
@@ -307,12 +394,32 @@ $hamburger-layer-color: #000;
   }
   p{
     padding-top: 19px;
-    font-size: 14px;
     font-size: 15px;
     color: #151515;
     font-family:verdana;
   }
 }
+
+
+.info-museum-in{
+  h2{
+    font-size: 36px;
+    line-height: 36px;
+  }
+  p{
+    font-size: 14px;
+    line-height: 18px;
+    width: 100%;
+  }
+  @if $adaptive == true {
+    @media (max-width: 767px){
+      h2{
+        text-align: center;
+      }
+    }
+  }
+}
+
 
 .subscription{
   a{
@@ -455,5 +562,163 @@ footer{
     color: #fff;
   }
 }
+
+
+.breadcrumbs{
+  margin-bottom: 22px;
+  li{
+    float: left;
+    &:last-child{
+      a{
+        &:after{
+          display: none;
+        }
+      }
+    }
+  }
+  a{
+    display: block;
+    font-size:14px;
+    color: #cf2c38;
+    position: relative;
+    text-decoration: underline;
+    margin-right: 17px;
+    &:after{
+      position: absolute;
+      content: "/";
+      right: -12px;
+      top: 0;
+      color: #9d9d9d;
+    }
+    &:hover{
+      color: #9d9d9d;
+    }
+  }
+  .active{
+    color: #9d9d9d;
+    text-decoration: none;
+  }
+}
+.space-list{
+  text-align: center;
+  margin-top: 19px;
+  margin-bottom: 19px;
+  .active{
+    color: #cf2c38;
+    border: 2px solid #cf2c38;
+  }
+  ul{
+    display: inline-block;
+  }
+  li{
+    float: left;
+    &:first-child{
+      a{
+        border: none;
+        background-image: url("../img/arrow-point-to-left.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-right: 10px;
+      }
+    }
+    &:last-child{
+      a{
+        border: none;
+        background-image: url("../img/arrow-point-to-right.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-left: 10px;
+      }
+    }
+    &:nth-child(6){
+      a{
+        border: none;
+      }
+    }
+  }
+  a{
+    color: #cac9c9;
+    border: 2px solid #cac9c9;
+    font-size:14px;
+    border-radius: 120px;
+    padding: 4.5px 8.6px;
+    margin: 0 2px;
+    &:hover{
+      color: #cf2c38;
+      border: 2px solid #cf2c38;
+    }
+  }
+}
+
+
+
+.departments-museum{
+  margin-top: 23px;
+  h2{
+    font-size: 30px;
+    color: #151515;
+    font-family: TrajanPro3-Bold;
+  }
+  ul{
+    text-align: center;
+  }
+  li{
+    display: inline-block;
+    vertical-align: top;
+    background-color: #fff;
+    width: 228px;
+    text-align: center;
+    margin: 9.5px 0px;
+  }
+  a{
+    padding: 19px 17px;
+    font-size:14px;
+    display: block;
+    color: #151515;
+    &:hover{
+      color: #cf2c38;
+    }
+  }
+  img{
+    width: 100%;
+  }
+  @if $adaptive == true {
+    @media (max-width: 767px){
+        text-align: center;
+    }
+  }
+}
+
+
+
+
+.link-museum{
+  margin-top: 27px;
+  margin-bottom: 33px;
+  li{
+    &:last-child{
+      a{
+        border: none;
+      }
+    }
+  }
+  a{
+    display: block;
+    background-color: #fff;
+    padding: 22px 0px 22px 26px;
+    font-size: 12px;
+    color: #151515;
+    background-image: url("../img/f1.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    border-bottom: 1px dashed #d1d1d1;
+    &:hover{
+      color: #cf2c38;
+      background-image: url("../img/f2.png");
+    }
+  }
+}
+
+
 //ALWAYS END
 @import "sketches.scss";
